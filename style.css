@@ -88,4 +88,48 @@ body {
     transform: rotate(-90deg);
 }
 
+.footer {
+    background-color: var(--color-azul);
+    grid-area: footer;
+    margin-top: 0;
+    margin: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
 
+@media (max-width: 1024px) {
+    .grid-container {
+        width: 60%;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "section"
+        "article"
+        "aside"
+        "footer"
+        ;
+    }
+
+    .header .footer .navbar {
+        height: 3rem;
+    }
+
+    .section {
+        height: 6rem;
+    }
+
+    .article {
+        height: 6rem;
+    }
+
+    .aside {
+        height: 15rem;
+    }
+
+    .aside h1 {
+        transform: rotate(0deg);
+    }
+}
